@@ -2,7 +2,7 @@ import json
 from pprint import pprint
 import pandas as pd
 
-def readJSON(path = r'C:\Users\jerry\OneDrive\Desktop\codeWork\RippleXN\Code\FourthFloorCreativeJSON.json'):
+def readJSON(path = r'.\FourthFloorCreativeJSON.json'):
     with open(rf'{path}') as filePath:
         d = json.load(filePath)
     return d
