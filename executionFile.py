@@ -18,3 +18,4 @@ text_input = st.text_input(
 df = extract_context(json, text_input, num_words=10)
 print("Running")
 st.dataframe(df)
+print("Done")
