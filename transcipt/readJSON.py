@@ -2,8 +2,18 @@ import json
 from pprint import pprint
 import pandas as pd
 
-def readJSON(path = r'.\FourthFloorCreativeJSON.json'):
-    with open(rf'{path}') as filePath:
+# def readJSON(path = r'.\FourthFloorCreativeJSON.json'):
+#     with open(rf'{path}') as filePath:
+import os
+
+def readJSON(path='FourthFloorCreativeJSON.json'):
+    # Ensure the path is correct
+    full_path = os.path.join(os.getcwd(), path)
+    print(f"Trying to read file at: {full_path}")  # This line is for debugging purposes
+
+    with open(full_path, 'r') as filePath:
+        # Your code to read and process the file
+
         d = json.load(filePath)
     return d
 
